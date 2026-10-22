@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'NOMBRE', defaultValue: 'Mundo', description: 'A quién saludar')
+        string(name: 'NOMBRE', defaultValue: 'Mundo', description: 'A quién queremos saludar')
         choice(name: 'AMBIENTE', choices: ['dev', 'qa', 'prod'], description: 'Ambiente destino')
         booleanParam(name: 'MOSTRAR_INFO', defaultValue: true, description: 'Mostrar info del build')
     }
